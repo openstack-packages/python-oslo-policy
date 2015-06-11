@@ -3,7 +3,7 @@
 
 Name:           python-oslo-policy
 Version:        XXX
-Release:        XXX{?dist}
+Release:        XXX
 Summary:        OpenStack oslo.policy library
 
 License:        ASL 2.0
@@ -14,9 +14,9 @@ BuildArch:      noarch
 BuildRequires:  python2-devel
 BuildRequires:  python-pbr
 
-Requires:       python-oslo-config >= 1.9.0
-Requires:       python-oslo-i18n >= 1.3.0
-Requires:       python-oslo-serialization >= 1.2.0
+Requires:       python-oslo-config >= 1.11.0
+Requires:       python-oslo-i18n >= 1.5.0
+Requires:       python-oslo-serialization >= 1.4.0
 
 %description
 An OpenStack library for policy.
@@ -27,6 +27,9 @@ Group:      Documentation
 
 BuildRequires:  python-sphinx
 BuildRequires:  python-oslo-sphinx
+BuildRequires:  python-oslo-config
+BuildRequires:  python-oslo-serialization
+BuildRequires:  python-oslo-i18n
 
 %description doc
 Documentation for the Oslo policy library.
@@ -61,5 +64,3 @@ rm -fr %{buildroot}%{python2_sitelib}/%{pypi_name}/tests/
 
 
 %changelog
-* Sat Mar 7 2015 Dan Prince <dprince@redhat.com> - XXX
-- Initial package
