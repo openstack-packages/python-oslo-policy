@@ -14,16 +14,18 @@ BuildArch:      noarch
 BuildRequires:  python2-devel
 BuildRequires:  python-pbr
 
-Requires:       python-oslo-config >= 1.11.0
+Requires:       python-oslo-config >= 2.3.0
 Requires:       python-oslo-i18n >= 1.5.0
 Requires:       python-oslo-serialization >= 1.4.0
+Requires:       python-oslo-utils >= 2.0.0
+Requires:       python-six >= 1.9.0
+
 
 %description
 An OpenStack library for policy.
 
 %package doc
 Summary:    Documentation for the Oslo policy library
-Group:      Documentation
 
 BuildRequires:  python-sphinx
 BuildRequires:  python-oslo-sphinx
@@ -55,12 +57,14 @@ rm -rf html/.{doctrees,buildinfo}
 rm -fr %{buildroot}%{python2_sitelib}/%{pypi_name}/tests/
 
 %files
-%doc README.rst LICENSE
+%doc README.rst
+%license LICENSE
 %{python2_sitelib}/oslo_policy
 %{python2_sitelib}/*.egg-info
 
 %files doc
-%doc html LICENSE
+%doc html
+%license LICENSE
 
 
 %changelog
