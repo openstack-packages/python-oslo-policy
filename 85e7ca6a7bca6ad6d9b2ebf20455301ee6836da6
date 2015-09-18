@@ -1,0 +1,7 @@
+Code-Review+2: Haïkel Guémar <haikel.guemar@gmail.com>
+Verified+1: Haïkel Guémar <haikel.guemar@gmail.com>
+Submitted-by: Haïkel Guémar <haikel.guemar@gmail.com>
+Submitted-at: Fri, 18 Sep 2015 09:08:54 +0200
+Reviewed-on: https://review.gerrithub.io/246719
+Project: openstack-packages/python-oslo-policy
+Branch: refs/heads/rpm-kilo
