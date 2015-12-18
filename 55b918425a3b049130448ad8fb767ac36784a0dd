@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ac1b152_03ef98b1",
+        "filename": "python-oslo-policy.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1003941
+      },
+      "writtenOn": "2015-12-18T11:08:25Z",
+      "side": 1,
+      "message": "In Fedora Rawhide, I had to add BR: python-requests to avoid a %check error. Still failing due to old fixtures, though.",
+      "revId": "55b918425a3b049130448ad8fb767ac36784a0dd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
