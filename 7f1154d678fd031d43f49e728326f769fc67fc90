@@ -1,0 +1,7 @@
+Verified+1: rdo-ci-jenkins <whayutin+rdocijenkins@redhat.com>
+Code-Review+2: Alan Pevec <alan.pevec@redhat.com>
+Submitted-by: Alan Pevec <alan.pevec@redhat.com>
+Submitted-at: Fri, 15 Jan 2016 13:56:31 +0100
+Reviewed-on: https://review.gerrithub.io/259909
+Project: openstack-packages/python-oslo-policy
+Branch: refs/heads/rpm-master
