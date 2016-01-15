@@ -131,11 +131,11 @@ rm -rf html/.{doctrees,buildinfo}
 %endif
 
 %install
-%py2_install
-
 %if 0%{?with_python3}
 %py3_install
 %endif
+
+%py2_install
 
 %check
 # Due to old version of python-fixtures, one test is failing
@@ -149,6 +149,7 @@ rm -rf .testrepository
 %files -n python2-%{pkg_name}
 %doc README.rst
 %license LICENSE
+%{_bindir}/oslopolicy-checker
 %{python2_sitelib}/oslo_policy
 %{python2_sitelib}/*.egg-info
 %exclude %{python2_sitelib}/oslo_policy/tests
